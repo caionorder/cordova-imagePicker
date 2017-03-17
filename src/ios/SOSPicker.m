@@ -67,7 +67,7 @@
 
         int i = 1;
         do {
-            filePath = [NSString stringWithFormat:@"%@/%@%03d.%@", docsPath, CDV_PHOTO_PREFIX, i++, @"jpg"];
+            filePath = [NSString stringWithFormat:@"%@/%@%03d.%@", docsPath, CDV_PHOTO_PREFIX, i++];
         } while ([fileMgr fileExistsAtPath:filePath]);
         
         @autoreleasepool {
